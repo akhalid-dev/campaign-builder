@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campaigns",
+  "info": {
+    "name": "campaign",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "pages": {
+      "via": "campaigns",
+      "collection": "page"
+    },
+    "DV_Pixel": {
+      "type": "string"
+    }
+  }
+}

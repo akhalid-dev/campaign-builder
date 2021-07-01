@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parent_companies",
+  "info": {
+    "name": "ParentCompany"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

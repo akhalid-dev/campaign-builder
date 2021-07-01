@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "json"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "campaigns": {
+      "via": "pages",
+      "collection": "campaign",
+      "dominant": true
+    },
+    "Store": {
+      "type": "json"
+    }
+  }
+}
